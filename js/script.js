@@ -4,7 +4,7 @@ function sortearNumeros() {
     const numeroAleatorio = Math.floor(Math.random() * 25) + 1;
     numerosSorteados.add(numeroAleatorio);
   }
-  return Array.from(numerosSorteados);
+  return Array.from(numerosSorteados).sort((a, b) => a - b); // Ordenar os números
 }
 
 document
